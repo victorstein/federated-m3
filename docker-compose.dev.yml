@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  api:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./apps/federated-m3:/app/apps/federated-m3:ro
+    command: yarn nest start --watch
+  email:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./apps/email:/app/apps/email:ro
+    command: yarn nest start --watch email
+

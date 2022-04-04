@@ -1,0 +1,33 @@
+version: '3.9'
+services:
+  api:
+    container_name: m3-api
+    build:
+      context: ./
+      dockerfile: ./apps/federated-m3/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: on-failure
+  email:
+    container_name: m3-email
+    build:
+      context: ./
+      dockerfile: ./apps/email/Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+    restart: on-failure
+  ## DATABASE
+  db:
+    container_name: m3-db
+    build:
+      context: ./db
+    ports:
+      - "27017:27017"
+    restart: on-failure
+    logging:
+      driver: none
+
