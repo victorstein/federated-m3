@@ -1,0 +1,5 @@
+module "email-ssh" {
+  source = "../../ssh"
+  key_name = "email-ssh"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCocEweBy9blbIXgRPfeVP34FG3kDCqkpltlbXwD7a6iL6qVsuw902luweif1VQyogSLKcZvbKqkpJm/P0BvoU0gPkYh0wADR5V1sM+ttDFfqZhsOqZVxrI+uGo3As2YFbpJG1yUrtVx6NeCxud8wNODc2X1r5Y4TO3TVCiuRYCh1V9iL6ky5IZJ9EiZF8LJ+Fvlg00NXihXikI13xPfBnimU0tWCWOp74iFg/LP4H7JLeclQ3zrTiu9J0AdWZuYNbFSBOhodIsiGMsXzczH5BIhFt60Cu8m654f1g04wN90cZNL07T+o+NJXkIctvP9ZpTECU+IJSqhZ7255N//Z8V2jUVYmggbIpOvRWGJmpyUvyoW8ITL+Fgl1efq+G20t4gBiakUKPAitpfcQNoTDQFHnpeZaaWKcJWabUjefARnELGwvUv9k9PvHthHexaHAt3zoXfOayx3iM36A8o3UejBJDEyVhFbA+I7FAbcbsaDO/q8xr0ZqGWilOlPeDTs1k= Alfonso@Admins-MacBook-Pro.local"
+}
