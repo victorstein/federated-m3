@@ -28,6 +28,4 @@ services:
     ports:
       - "27017:27017"
     restart: on-failure
-    logging:
-      driver: none
 
